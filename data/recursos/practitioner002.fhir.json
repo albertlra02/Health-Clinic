@@ -1,0 +1,27 @@
+{
+  "resourceType": "Practitioner",
+  "id": "m002",
+  "name": [
+      {
+          "family": "Blanco",
+          "given": ["Ángela"]
+      }
+  ],
+  "qualification": [
+      {
+          "code": {
+              "text": "Dermatología"
+          }
+      }
+  ],
+  "extension": [
+      {
+          "url": "http://example.org/fhir/extensions#yearsOfExperience",
+          "valueInteger": 8
+      },
+      {
+          "url": "http://example.org/fhir/extensions#hospital",
+          "valueString": "Virgen del Rocío"
+      }
+  ]
+}

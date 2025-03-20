@@ -1,0 +1,27 @@
+{
+  "resourceType": "Practitioner",
+  "id": "m005",
+  "name": [
+      {
+          "family": "Fernández",
+          "given": ["Diego"]
+      }
+  ],
+  "qualification": [
+      {
+          "code": {
+              "text": "Oncología"
+          }
+      }
+  ],
+  "extension": [
+      {
+          "url": "http://example.org/fhir/extensions#yearsOfExperience",
+          "valueInteger": 15
+      },
+      {
+          "url": "http://example.org/fhir/extensions#hospital",
+          "valueString": "Clínica Los Ángeles"
+      }
+  ]
+}

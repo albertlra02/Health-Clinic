@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Médicos - Clínica Salud</title>
+    <link rel="stylesheet" href="/css/pages.css"> 
+</head>
+<body>
+    <%- include('../../partials/header.ejs') %> 
+
+    <main>
+        <h2>Lista de Médicos</h2>
+        <ul>
+            <% medicos.forEach(function(medico) { %>
+                <li>
+                    <strong>Nombre:</strong> <%= medico.nombre %>, 
+                    <strong>Apellido:</strong> <%= medico.apellido %>, 
+                    <strong>Especialidad:</strong> <%= medico.especialidad %>, 
+                    <strong>Años de experiencia:</strong> <%= medico.experiencia %> años,
+                    <strong>Centro donde pasa consulta:</strong> <%= medico.centro %>
+                    <a href="/medicos/edita/<%= medico.id %>">Editar</a>
+                    <a href="/medicos/baja/<%= medico.id %>">Eliminar</a>
+                </li>
+            <% }) %>
+        </ul>
+        
+        <li><a href="/medicos/alta">Añadir nuevo médico</a></li>
+        <li><a href="/practitioners">Practitioners</a></li>
+        
+
+    </main>
+
+   
+    <%- include('../../partials/footer.ejs') %>
+</body>
+</html>

@@ -1,0 +1,23 @@
+{
+    "resourceType": "Patient",
+    "id": "002",
+    "name": [
+      {
+        "family": "García",
+        "given": ["Ana"]
+      }
+    ],
+    "gender": "female",
+    "birthDate": "1998-01-01",
+    "address": [
+      {
+        "city": "Malaga"
+      }
+    ],
+    "extension": [
+      {
+        "url": "http://example.org/fhir/StructureDefinition/pathology",
+        "valueString": "gripe"
+      }
+    ]
+  }

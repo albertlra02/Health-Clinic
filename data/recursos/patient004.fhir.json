@@ -1,0 +1,23 @@
+{
+    "resourceType": "Patient",
+    "id": "004",
+    "name": [
+      {
+        "family": "Fernández",
+        "given": ["Laura"]
+      }
+    ],
+    "gender": "female",
+    "birthDate": "1990-05-15",
+    "address": [
+      {
+        "city": "Barcelona"
+      }
+    ],
+    "extension": [
+      {
+        "url": "http://example.org/fhir/StructureDefinition/pathology",
+        "valueString": "diabetes"
+      }
+    ]
+  }

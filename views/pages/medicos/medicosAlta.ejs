@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/pages.css">
+</head>
+<body>
+    <%- include('../../partials/header.ejs') %>
+    <form method = "POST" action = "/medicos/alta">
+        <label for = "id">Id</label>
+        <input type = "text" name = "id" id = "id"/>
+
+        <label for = "nombre">Nombre</label>
+        <input type = "text" name = "nombre" id = "nombre"/>
+
+        <label for = "apellido">Apellido</label>
+        <input type = "text" name = "apellido" id = "apellido"/>
+        
+        <label for = "especialidad">Especialidad</label>
+        <input type = "text" name = "especialidad" id = "especialidad"/>
+
+        <label for = "experiencia">Experiencia</label>
+        <input type = "number" name = "experiencia" id = "experiencia"/>
+
+        <label for = "centro">Centro</label>
+        <input type = "text" name = "centro" id = "centro"/>
+
+        <button type="submit">Guardar</button>
+    </form>
+    <%- include('../../partials/footer.ejs') %>
+</body>
+</html>

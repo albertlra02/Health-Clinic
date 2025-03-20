@@ -1,0 +1,23 @@
+{
+    "resourceType": "Patient",
+    "id": "001",
+    "name": [
+      {
+        "family": "Pérez",
+        "given": ["Juan"]
+      }
+    ],
+    "gender": "male",
+    "birthDate": "1993-01-01",
+    "address": [
+      {
+        "city": "Sevilla"
+      }
+    ],
+    "extension": [
+      {
+        "url": "http://example.org/fhir/StructureDefinition/pathology",
+        "valueString": "neumonía"
+      }
+    ]
+  }

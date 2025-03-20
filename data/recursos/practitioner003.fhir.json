@@ -1,0 +1,27 @@
+{
+  "resourceType": "Practitioner",
+  "id": "m003",
+  "name": [
+      {
+          "family": "Ruiz",
+          "given": ["Javier"]
+      }
+  ],
+  "qualification": [
+      {
+          "code": {
+              "text": "Neurología"
+          }
+      }
+  ],
+  "extension": [
+      {
+          "url": "http://example.org/fhir/extensions#yearsOfExperience",
+          "valueInteger": 12
+      },
+      {
+          "url": "http://example.org/fhir/extensions#hospital",
+          "valueString": "Macarena"
+      }
+  ]
+}

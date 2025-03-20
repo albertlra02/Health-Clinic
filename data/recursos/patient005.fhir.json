@@ -1,0 +1,23 @@
+{
+    "resourceType": "Patient",
+    "id": "005",
+    "name": [
+      {
+        "family": "Martínez",
+        "given": ["Pedro"]
+      }
+    ],
+    "gender": "male",
+    "birthDate": "1985-11-23",
+    "address": [
+      {
+        "city": "Valencia"
+      }
+    ],
+    "extension": [
+      {
+        "url": "http://example.org/fhir/StructureDefinition/pathology",
+        "valueString": "hipertensión"
+      }
+    ]
+  }

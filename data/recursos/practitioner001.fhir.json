@@ -1,0 +1,27 @@
+{
+  "resourceType": "Practitioner",
+  "id": "m001",
+  "name": [
+      {
+          "family": "García",
+          "given": ["Alberto"]
+      }
+  ],
+  "qualification": [
+      {
+          "code": {
+              "text": "Cardiología"
+          }
+      }
+  ],
+  "extension": [
+      {
+          "url": "http://example.org/fhir/extensions#yearsOfExperience",
+          "valueInteger": 10
+      },
+      {
+          "url": "http://example.org/fhir/extensions#hospital",
+          "valueString": "Macarena"
+      }
+  ]
+}

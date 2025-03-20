@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centro - Clínica Salud</title>
+    <link rel="stylesheet" href="/css/pages.css"> 
+</head>
+<body>
+    <%- include('../partials/header.ejs') %> 
+
+    <main>
+        <h2>Información del Centro</h2>
+        <p><strong>Nombre:</strong> <%= datos.nombre %></p>
+        <p><strong>Teléfono:</strong> <%= datos.telefono %></p>
+        <p><strong>Correo electrónico:</strong> <%= datos.correo %></p>
+        <a href="/">Volver</a>
+    </main>
+
+    
+
+    <%- include('../partials/footer.ejs') %> 
+</body>
+</html>

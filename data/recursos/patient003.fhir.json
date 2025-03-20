@@ -1,0 +1,23 @@
+{
+    "resourceType": "Patient",
+    "id": "003",
+    "name": [
+      {
+        "family": "López",
+        "given": ["Carlos"]
+      }
+    ],
+    "gender": "male",
+    "birthDate": "1983-01-01",
+    "address": [
+      {
+        "city": "Madrid"
+      }
+    ],
+    "extension": [
+      {
+        "url": "http://example.org/fhir/StructureDefinition/pathology",
+        "valueString": "asma"
+      }
+    ]
+  }

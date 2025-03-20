@@ -1,0 +1,27 @@
+{
+  "resourceType": "Practitioner",
+  "id": "m004",
+  "name": [
+      {
+          "family": "Martínez",
+          "given": ["Sofía"]
+      }
+  ],
+  "qualification": [
+      {
+          "code": {
+              "text": "Pediatría"
+          }
+      }
+  ],
+  "extension": [
+      {
+          "url": "http://example.org/fhir/extensions#yearsOfExperience",
+          "valueInteger": 7
+      },
+      {
+          "url": "http://example.org/fhir/extensions#hospital",
+          "valueString": "Hospital del Sur"
+      }
+  ]
+}

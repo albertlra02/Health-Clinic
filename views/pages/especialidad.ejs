@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Especialidades - Clínica Salud</title>
+    <link rel="stylesheet" href="/css/pages.css"> 
+</head>
+<body>
+    <%- include('../partials/header.ejs') %> 
+
+    <main>
+        <h2>Lista de Especialidades</h2>
+        <ul>
+            <% datos.forEach(dato => { %>
+                <li><%= dato %></li>
+            <% }) %>
+        </ul>
+        <a href="/">Volver</a>
+    </main>
+
+    
+
+    <%- include('../partials/footer.ejs') %> 
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actualizar Medico</title>
+    <link rel="stylesheet" href="/css/pages.css">
+</head>
+<body>
+    <%- include('../../partials/header.ejs') %>
+    
+    <form method="POST" action="/medicos/edita/<%= medico.id %>">
+        <label for="id">Id</label>
+        <input type="text" name="id" id="id" value="<%= medico.id %>" />
+
+        <label for="nombre">Nombre</label>
+        <input type="text" name="nombre" id="nombre" value="<%= medico.nombre %>" />
+        
+        <label for="apellido">Apellido</label>
+        <input type="text" name="apellido" id="apellido" value="<%= medico.apellido %>" />
+
+        <label for="especialidad">Especialidad</label>
+        <input type="text" name="especialidad" id="especialidad" value="<%= medico.especialidad %>" />
+
+        <label for="experiencia">Experiencia</label>
+        <input type="number" name="experiencia" id="experiencia" value="<%= medico.experiencia %>" />
+
+        <label for="centro">Centro</label>
+        <input type="text" name="centro" id="centro" value="<%= medico.centro %>" />
+        
+        <button type="submit">Guardar</button>
+    </form>
+    
+    <%- include('../../partials/footer.ejs') %>
+</body>
+</html>

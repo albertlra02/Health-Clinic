@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pacientes - Clínica Salud</title>
+    <link rel="stylesheet" href="/css/pages.css">
+</head>
+<body>
+    <%- include('../../partials/header.ejs') %>
+
+    <main>
+        <h2>Lista de Pacientes</h2>
+        <ul>
+            <% pacientes.forEach(function(paciente) { %>
+                <li>
+                    <strong>Nombre:</strong> <%= paciente.nombre %>,
+                    <strong>Apellido:</strong> <%= paciente.apellido %>, 
+                    <strong>Edad:</strong> <%= paciente.edad %> años,
+                    <strong>Genero:</strong> <%= paciente.genero %>,
+                    <strong>Direccion:</strong> <%= paciente.direccion %>,
+                    <strong>Patologia:</strong> <%= paciente.patologia %>
+                    <a href="/pacientes/edita/<%= paciente.id %>">Editar</a>
+                    <a href="/pacientes/baja/<%= paciente.id %>">Eliminar</a>
+                </li>
+            <% }) %>
+        </ul>  
+        <li><a href="/pacientes/alta">Crear nuevo paciente</a></li>
+        <li><a href="/patients">Patients</a>  </li>       
+    </main>
+    
+    <%- include('../../partials/footer.ejs') %>
+</body>
+</html>

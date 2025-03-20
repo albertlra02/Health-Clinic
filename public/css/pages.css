@@ -1,0 +1,51 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f9fc;
+    color: #333;
+    margin: 0; /*0*/
+    padding: 0;
+}
+
+/* Contenedor principal */
+main {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Título de la lista de pacientes */
+h2 {
+    color: #3498db;
+    font-size: 1.8em;
+    margin-bottom: 20px; 
+}
+
+/* Lista de pacientes */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    background-color: #eaf4fb;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 1.1em;
+}
+
+/* Resaltar los títulos de los datos */
+strong {
+    color: #3498db;
+}
+
+/* Asegurar que el enlace no se solape con el footer */
+body > a[href="/medicos"] {
+    margin-bottom: 50px; /* Espacio adicional debajo del enlace */
+}

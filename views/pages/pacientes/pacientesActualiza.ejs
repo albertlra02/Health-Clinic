@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actualizar Paciente</title>
+    <link rel="stylesheet" href="/css/pages.css">
+</head>
+<body>
+    <%- include('../../partials/header.ejs') %>
+    
+    <form method="POST" action="/pacientes/edita/<%= paciente.id %>">
+        <label for="id">Id</label>
+        <input type="text" name="id" id="id" value="<%= paciente.id %>" />
+
+        <label for="nombre">Nombre</label>
+        <input type="text" name="nombre" id="nombre" value="<%= paciente.nombre %>" />
+        
+        <label for="apellido">Apellido</label>
+        <input type="text" name="apellido" id="apellido" value="<%= paciente.apellido %>" />
+
+        <label for="edad">Edad</label>
+        <input type="number" name="edad" id="edad" value="<%= paciente.edad %>" />
+
+        <label for="genero">Genero</label>
+        <input type="text" name="genero" id="genero" value="<%= paciente.genero %>" />
+
+        <label for="direccion">Direccion</label>
+        <input type="text" name="direccion" id="direccion" value="<%= paciente.direccion %>" />
+
+        <label for="patologia">Patologia</label>
+        <input type="text" name="patologia" id="patologia" value="<%= paciente.patologia %>" />
+        
+        <button type="submit">Guardar</button>
+    </form>
+    
+    <%- include('../../partials/footer.ejs') %>
+</body>
+</html>
